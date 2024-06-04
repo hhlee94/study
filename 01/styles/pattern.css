@@ -1,0 +1,17 @@
+div {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #222;
+  margin-bottom: 30px;
+}
+.grad1 {
+  background: repeating-linear-gradient(
+    white,
+    white 10px,
+    blue 10px,
+    blue 30px
+  );
+}
+.grad2 {
+    background: repeating-radial-gradient(circle,green,green 10%, yellow 10%, yellow 20%);
+}

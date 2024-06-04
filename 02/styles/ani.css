@@ -1,0 +1,76 @@
+#wrap {
+  width: 500px;
+  margin: 20px auto;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  float: left;
+}
+#box1 {
+  background-color: bisque;
+  border: 1px solid transparent;
+  animation-name: shape;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#box2 {
+  background-color: lightpink;
+  border: 1px solid transparent;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-direction: reverse;
+}
+
+#box3 {
+  background-color: midnightblue;
+  animation: rotate3d 2s infinite ease-in-out,
+    background 2s infinite alternate ease-in-out;
+}
+
+@keyframes shape {
+  from {
+    border: 1px solid transparent;
+  }
+  to {
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    border: 1px solid transparent;
+  }
+  to {
+    transform: rotate(45deg);
+    border: 1px solid #000;
+  }
+}
+
+@keyframes rotate3d {
+  from {
+    transform: perspective(150px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(150px) rotateX(-180deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(150px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+@keyframes background {
+  from {
+    background-color: aqua;
+  }
+  50% {
+    background-color: aquamarine;
+  }
+  to {
+    background-color: beige;
+  }
+}

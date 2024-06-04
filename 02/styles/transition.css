@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 40px;
+}
+.bg-tr {
+  background-color: bisque;
+  transition: all ease 1s;
+}
+.bg-tr:hover {
+  background-color: lightpink;
+}
+.border-tr {
+  background-color: mintcream;
+  border: 3px solid black;
+  transition: all linear 2s;
+}
+.border-tr:hover {
+  border: 3px solid orangered;
+  border-radius: 50%;
+}

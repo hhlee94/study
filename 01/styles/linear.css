@@ -1,0 +1,16 @@
+div {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+.gradient {
+  background: mintcream;
+  /* 왼쪽위에서 오른쪽아래 방향으로 파랑에서 노란색으로  */
+  background: linear-gradient(to right bottom, blue, orange);
+}
+.gradient-1 {
+  background: linear-gradient(-45deg, yellow, green);
+}
+.gradient-2 {
+    background: linear-gradient(45deg,pink 30%,red);
+}

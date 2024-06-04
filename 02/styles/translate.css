@@ -1,0 +1,30 @@
+#container {
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+}
+.origin {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  float: left;
+  margin: 40px;
+}
+.origin > div {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+}
+#movex:hover {
+  /*x축(가로)으로 50px 이동 */
+  transform: translateX(50px);
+}
+#movey:hover {
+  /* y축(세로)로 40px 이동 */
+  transform: translateY(40px);
+}
+#movexy:hover {
+  /* x축(가로) 30px ,y축(세로) 30px 이동 */
+  transform: translate(30px, 30px);
+}
+
